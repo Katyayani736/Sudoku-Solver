@@ -1,0 +1,130 @@
+/* Header Section */
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Center logo and name vertically */
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: #f5f5f5;
+    /* Light gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 10px 20px;
+    /* Add some padding for breathing room */
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#logo img {
+    width: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio and scale to fill */
+}
+
+#name {
+    flex: 1;
+    /* Allow name to grow and shrink with available space */
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    /* Adjust font size for readability */
+    font-weight: bold;
+    color: #333;
+    /* Darker text for contrast */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    /* Subtle text shadow */
+}
+
+/* Main Content Section */
+.Heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    /* Adjust font size for readability */
+    font-weight: bold;
+    color: #333;
+    /* Darker text for contrast */
+    margin-bottom: 30px;
+    /* Add some space after the heading */
+}
+
+.sudoku_grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    /* Adjust max-width for different screen sizes */
+    margin: 0 auto;
+    /* Center the grid horizontally */
+    border-radius: 5px;
+    /* Add subtle rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow */
+}
+
+.sudoku_grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #333;
+    /* Darker text for contrast */
+    font-size: 32px;
+    /* Adjust font size for readability */
+    border: 2px solid #ddd;
+    /* Light gray border */
+    font-family: "Arial", sans-serif;
+    /* Specify a clean font */
+}
+
+/* Buttons Section */
+.Buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    /* Adjust margin for spacing */
+    /* Consider using margin-bottom instead for better responsiveness */
+}
+
+#GetPuzzle,
+#SolvePuzzle {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    /* Increase padding for better click area */
+    font-size: 18px;
+    /* Adjust font size for buttons */
+    border: 1px solid transparent;
+    /* Remove border for cleaner look */
+    border-radius: 5px;
+    /* Add rounded corners */
+    background-color: #3498db;
+    /* Blue button color */
+    cursor: pointer;
+    /* Indicate clickable behavior */
+    transition: all 0.2s ease-in-out;
+    /* Smoother hover effects */
+}
+
+#GetPuzzle:hover,
+#SolvePuzzle:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Slight shadow on hover */
+}
+
+/* Grid Cell Styles */
+.box1 {
+    background-color: #f0f0f0;
+    /* Light gray for empty cells */
+}
