@@ -74,7 +74,6 @@ function isvalid(board, i, j, num) {
 }
 
 // Function to solve Sudoku
-// Function to solve Sudoku
 async function sudokusolver(board, i, j, n) {
     if (i == n) {
         await new Promise(resolve => setTimeout(resolve, 100)); // Add a small delay for visualization
