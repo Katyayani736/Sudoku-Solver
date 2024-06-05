@@ -21,7 +21,8 @@ function FillBoard(board) {
                 }
             }
         }
-    } else {
+    } 
+    else {
         console.error("Empty board!");
     }
 }
